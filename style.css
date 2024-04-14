@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.block {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.block__left {
+    background-color: white;
+    color: #333;
+    padding: 80px 20px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.block__right {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    padding: 40px;
+    background-color: white;
+    grid-gap: 20px 40px;
+    align-content: start;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.content {
+    display: grid;
+    align-content: end;
+    border-left: 2px solid red;
+    padding-left: 30px;
+    margin-top: 60px;
+}
+
+.carousel {
+    display: grid;
+    align-content: start;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+
+.label {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.desc {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1em;
+    opacity: 0.8;
+}
+
+.card {
+    display: grid;
+    justify-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.card:hover {
+
+        -webkit-transform: translateY(-6px);
+        -moz-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+        -o-transform: translateY(-6px);
+        transform: translateY(-6px);
+        box-shadow: 0px 20px 30px rgba(153, 153, 153, 0.2);
+        cursor: pointer;
+}
+
+.card__img {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #1764c8;
+    clip-path: polygon(50% 0%, 
+    100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    opacity: 0.7;
+}
+
+.card__img svg {
+    width: 40%;
+    height: 40%;
+}
+
+.card__img path{
+    fill: white;
+    transition: 0.4s;
+}
+
+.card__title {
+    color: #242429;
+    margin: 16px 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.card__desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1em;
+    letter-spacing: 2px;
+}
+
